@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Landing, Login, Logout, SharedLayout, Dashboard, AddJob, EditUser, Jobs } from './pages';
+import { Landing, Login, Register, SharedLayout, Dashboard, AddJob, EditUser, Jobs } from './pages';
 
 function App() {
     const routes = createBrowserRouter([
@@ -34,8 +34,8 @@ function App() {
             element: <Login />,
         },
         {
-            path: '/logout',
-            element: <Logout />,
+            path: '/register',
+            element: <Register />,
         },
     ]);
     return <RouterProvider router={routes} />;

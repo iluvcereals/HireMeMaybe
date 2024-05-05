@@ -1,8 +1,8 @@
-export { default as Landing } from './Landing/Landing';
-export { default as Logout } from './Auth/Logout';
+export { default as Landing } from './Landing';
+export { default as Register } from './Auth/Register';
 export { default as Login } from './Auth/Login';
-export { default as SharedLayout } from './Layout/SharedLayout';
-export { default as Dashboard } from './Dashboard/Dashboard';
-export { default as AddJob } from './AddJob/AddJob';
-export { default as EditUser } from './EditUser/EditUser';
-export { default as Jobs } from './Jobs/Jobs';
+export { default as SharedLayout } from './Layout';
+export { default as Dashboard } from './Dashboard';
+export { default as AddJob } from './AddJob';
+export { default as EditUser } from './EditUser';
+export { default as Jobs } from './Jobs';
