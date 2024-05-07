@@ -10,7 +10,7 @@ function SharedLayout() {
                 <SmallSidebar />
                 <Sidebar />
                 <div
-                    className={`flex-1 bg-slate-200 py-10 px-12 overflow-auto border-2 border-slate-300 ${isSidebarOpen ? 'md:w-2/3' : 'w-full'}`}
+                    className={`flex-1 bg-slate-200 p-2 md:py-10 md:px-12 overflow-auto border-2 border-slate-400 ${isSidebarOpen ? 'md:w-2/3' : 'w-full'}`}
                 >
                     <Outlet />
                 </div>

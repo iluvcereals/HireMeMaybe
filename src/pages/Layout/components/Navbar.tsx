@@ -7,7 +7,7 @@ function Navbar() {
         dispatch(toggleSidebar());
     }
     return (
-        <nav className="h-32 bg-slate-50">
+        <nav className="h-32 bg-slate-300">
             <button onClick={handleSidebar}>Click me</button>
         </nav>
     );

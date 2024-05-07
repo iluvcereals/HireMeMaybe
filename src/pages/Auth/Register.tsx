@@ -7,13 +7,14 @@ function Register() {
             <div className="bg-white hover:shadow-2xl transition-shadow ease-in-out duration-500 border-solid border-2 border-black w-96 h-[28rem] rounded-md">
                 <h1 className="text-center m-4 text-4xl">Register</h1>
                 <Form className="mt-8">
+                    {/* TODO: remove defaults  */}
                     <FormInput type="text" name="username" />
                     <FormInput type="email" name="email" />
                     <FormInput type="password" name="password" />
                     <div className="px-4 mt-5">
                         <button
                             type="submit"
-                            className="border-solid border-2 border-black w-full h-10 rounded-md bg-black text-white hover:bg-gray-800 ease-in transition-colors duration-300"
+                            className="border-solid border-2 border-black w-full h-10 rounded-md bg-black text-white hover:bg-gray-700 ease-in transition-colors duration-300"
                         >
                             Register
                         </button>

@@ -12,7 +12,9 @@ function NavLinks() {
                         key={id}
                         end={url === '/app'}
                         className={({ isActive }) => {
-                            return isActive ? 'underline' : 'hover:underline';
+                            return isActive
+                                ? 'underline'
+                                : 'hover:translate-x-2 transition-transform ease-in-out duration-150';
                         }}
                     >
                         {text}

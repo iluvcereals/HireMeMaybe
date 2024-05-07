@@ -6,7 +6,7 @@ const initialState: JobType = {
     company: 'Google',
     location: 'New York',
     status: 'pending',
-    statusOptions: ['pending', 'interview', 'declined'],
+    statusOptions: ['pending', 'interview', 'rejected'],
 };
 
 const jobSlice = createSlice({

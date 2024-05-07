@@ -7,12 +7,13 @@ function Login() {
             <div className="bg-white hover:shadow-2xl transition-shadow ease-in-out duration-500 border-solid border-2 border-black w-96 h-[28rem] rounded-md">
                 <h1 className="text-center m-4 text-4xl">Login</h1>
                 <Form className="mt-8">
+                    {/* TODO: remove defaults  */}
                     <FormInput type="text" name="username" />
                     <FormInput type="password" name="password" />
                     <div className="px-4 mt-5">
                         <button
                             type="submit"
-                            className="border-solid border-2 border-black w-full h-10 rounded-md bg-black text-white hover:bg-gray-800 ease-in transition-colors duration-300"
+                            className="border-solid border-2 border-black w-full h-10 rounded-md bg-black text-white hover:bg-gray-700 ease-in transition-colors duration-300"
                         >
                             Login
                         </button>
@@ -20,7 +21,7 @@ function Login() {
                     <div className="px-4 mt-5">
                         <button
                             type="button"
-                            className="border-solid border-2 border-black w-full h-10 rounded-md  bg-gray-300  hover:bg-gray-400 ease-in transition-colors duration-300"
+                            className="shadow-lg border-2 border-hidden w-full h-10 rounded-md  bg-gray-300  hover:bg-gray-400 ease-in transition-colors duration-300"
                         >
                             Guest
                         </button>

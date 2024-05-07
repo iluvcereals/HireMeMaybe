@@ -2,7 +2,7 @@ import { type FormSelectProps } from './FormSelect.types';
 function FormSelect({ values, name, label, currentValue }: FormSelectProps) {
     return (
         <div className="mb-2 px-4">
-            <label htmlFor={name} className="block">
+            <label htmlFor={name} className="block text-gray-500">
                 {label || name}
             </label>
             <select

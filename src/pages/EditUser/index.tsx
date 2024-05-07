@@ -21,11 +21,11 @@ function EditUser() {
 
                 <div className="px-4 flex gap-x-4 mt-2">
                     {/* TODO: Submit btn */}
-                    <button className="bg-green-300 hover:bg-green-400 transition-colors ease-in duration-150 px-2 py-1 rounded-md">
+                    <button className="bg-black hover:bg-gray-700 text-white transition-colors ease-in duration-150 px-2 py-1 rounded-md">
                         Submit
                     </button>
                     {/* TODO: Clear btn */}
-                    <button className="bg-red-400 hover:bg-red-500 transition-colors ease-in duration-150 px-2 py-1 rounded-md">
+                    <button className="bg-red-500 hover:bg-red-700 text-white transition-colors ease-in duration-150 px-2 py-1 rounded-md">
                         Clear
                     </button>
                 </div>

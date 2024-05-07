@@ -8,7 +8,7 @@ function Sidebar() {
         return null;
     }
     return (
-        <div className="hidden h-full w-72 md:flex flex-col items-center border-solid  text-4xl pt-5 bg-slate-50">
+        <div className="hidden h-full w-72 md:flex flex-col items-center border-solid  text-4xl pt-5 bg-slate-300">
             <NavLinks />
         </div>
     );

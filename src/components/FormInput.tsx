@@ -1,9 +1,12 @@
 import { type FormInputProps } from './FormInput.types';
 
 function FormInput({ type, name, label, defaultValue }: FormInputProps) {
+    {
+        /* TODO: remove defaults  */
+    }
     return (
         <div className="mb-2 px-4">
-            <label htmlFor={name} className="block text-gray-800">
+            <label htmlFor={name} className="block text-gray-500">
                 {label || name}
             </label>
             <input
