@@ -3,6 +3,7 @@ import { useAppSelector } from '@/hooks';
 import { SmallSidebar, Navbar, Sidebar } from './components';
 function SharedLayout() {
     const isSidebarOpen = useAppSelector((state) => state.userState.isSidebarOpen);
+
     return (
         <div className="flex flex-col h-screen">
             <Navbar />

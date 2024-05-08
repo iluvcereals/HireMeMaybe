@@ -12,7 +12,6 @@ function FormInput({ type, name, label, defaultValue }: FormInputProps) {
             <input
                 type={type}
                 name={name}
-                value={label}
                 defaultValue={defaultValue || ''}
                 className="border-solid border-2 border-slate-300 rounded-md
                 w-full px-2 outline-none h-10"

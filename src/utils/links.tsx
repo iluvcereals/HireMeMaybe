@@ -1,29 +1,29 @@
-interface LinkType {
-    id: number;
-    text: string;
-    url: string;
-}
+import { AiFillDiff, AiFillHome, AiFillShopping, AiOutlineUser } from 'react-icons/ai';
 
-export const links: LinkType[] = [
+export const links = [
     {
         id: 1,
         text: 'Home',
         url: '/app',
+        icon: <AiFillHome />,
     },
     {
         id: 2,
         text: 'Edit Profile',
         url: '/app/editUser',
+        icon: <AiOutlineUser />,
     },
     {
         id: 3,
         text: 'Add Job',
         url: '/app/addJob',
+        icon: <AiFillDiff />,
     },
     {
         id: 4,
         text: 'Browse Jobs',
         url: '/app/jobs',
+        icon: <AiFillShopping />,
     },
 ];
 

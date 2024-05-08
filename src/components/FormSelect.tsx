@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { type FormSelectProps } from './FormSelect.types';
 function FormSelect({ values, name, label, currentValue }: FormSelectProps) {
+    const [selectValue, setSelectValue] = useState(currentValue || 'pending');
     return (
         <div className="mb-2 px-4">
             <label htmlFor={name} className="block text-gray-500">
@@ -8,7 +10,8 @@ function FormSelect({ values, name, label, currentValue }: FormSelectProps) {
             <select
                 name={name}
                 id={name}
-                value={currentValue}
+                value={selectValue}
+                onChange={(e) => setSelectValue(e.target.value)}
                 className=" bg-white border-solid border-2 border-slate-300 rounded-md
                 w-full px-2 outline-none h-10"
             >
