@@ -1,7 +1,8 @@
 import { FormInput } from '@/components';
-import { Form, Link } from 'react-router-dom';
+import { Form, Link, useNavigate } from 'react-router-dom';
 
 function Login() {
+    const navigate = useNavigate();
     return (
         <section className="h-screen grid place-items-center bg-slate-50">
             <div className="bg-white hover:shadow-2xl transition-shadow ease-in-out duration-500 border-solid border-2 border-black w-96 h-[28rem] rounded-md">
@@ -22,6 +23,7 @@ function Login() {
                         <button
                             type="button"
                             className="shadow-lg border-2 border-hidden w-full h-10 rounded-md  bg-gray-300  hover:bg-gray-400 ease-in transition-colors duration-300"
+                            onClick={() => navigate('/app/jobs')}
                         >
                             Guest
                         </button>

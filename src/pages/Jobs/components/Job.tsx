@@ -2,7 +2,7 @@ import { type JobProps } from './Job.types';
 
 function Job({ company, position, location, status }: JobProps) {
     return (
-        <div className="group bg-white h-48 rounded-md p-8 text-sm shadow-lg md:text-md hover:shadow-xl ease-in-out transition-shadow duration-500">
+        <div className="group bg-white h-48 rounded-md p-8 text-sm shadow-lg md:text-md hover:shadow-xl transition-shadow">
             <div className="">
                 <header className="flex gap-x-2">
                     <div className="group-hover:text-white transition-colors ease-in-out duration-150 flex justify-center items-center text-4xl size-12 border-solid border-2 border-red rounded-md bg-black text-stone-400">
