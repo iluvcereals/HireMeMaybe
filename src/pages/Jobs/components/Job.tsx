@@ -1,4 +1,5 @@
 import { type JobProps } from './Job.types';
+import { ImLocation, ImSpinner, ImCrying, ImEvil } from 'react-icons/im';
 
 function Job({ company, position, location, status }: JobProps) {
     return (
@@ -14,15 +15,21 @@ function Job({ company, position, location, status }: JobProps) {
                     </div>
                 </header>
                 <div className="border-t-2 border-t-slate-200 mt-1 pt-2">
-                    <p className="text-gray-500">
-                        location: <span className="text-black">{location}</span>
+                    <p className="text-gray-500 flex gap-x-2">
+                        <span className="self-center">
+                            <ImLocation />
+                        </span>
+                        {location}
                     </p>
-                    <p className="text-gray-500">
-                        status: <span className="text-black">{status}</span>
+                    <p className="text-gray-500 flex gap-x-2">
+                        <span className={`self-center ${status === 'pending' ? 'animate-spin' : ''}`}>
+                            {status === 'pending' ? <ImSpinner /> : status === 'interview' ? <ImEvil /> : <ImCrying />}
+                        </span>
+                        {status}
                     </p>
                 </div>
             </div>
-            <div className="space-x-1 text-slate-400 mt-1">
+            <div className="space-x-1 text-slate-400 mt-2">
                 {/* TODO: Implement buttons. Make sure that Form submissions are handle by Form api via action and edit feature is managed by rtk  */}
                 <button className="hover:text-black transition-colors ease-in-out duration-150">Edit</button>
                 <button className="hover:text-black transition-colors ease-in-out duration-150">Delete</button>
