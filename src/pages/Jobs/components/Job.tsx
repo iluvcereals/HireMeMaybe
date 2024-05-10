@@ -16,13 +16,13 @@ function Job({ company, position, location, status }: JobProps) {
                 </header>
                 <div className="border-t-2 border-t-slate-200 mt-1 pt-2">
                     <p className="text-gray-500 flex gap-x-2">
-                        <span className="self-center">
+                        <span className="self-center text-black">
                             <ImLocation />
                         </span>
                         {location}
                     </p>
                     <p className="text-gray-500 flex gap-x-2">
-                        <span className={`self-center ${status === 'pending' ? 'animate-spin' : ''}`}>
+                        <span className={`self-center text-black ${status === 'pending' ? 'animate-spin' : ''}`}>
                             {status === 'pending' ? <ImSpinner /> : status === 'interview' ? <ImEvil /> : <ImCrying />}
                         </span>
                         {status}
