@@ -1,4 +1,4 @@
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [
     { name: 'Interview', value: 12 },
@@ -35,7 +35,7 @@ function PieChartComponent() {
                     fill="#8884d8"
                     dataKey="value"
                 >
-                    {data.map((entry, index) => (
+                    {data.map((_, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                 </Pie>
