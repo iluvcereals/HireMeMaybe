@@ -30,7 +30,7 @@ function ChartsContainer() {
           <XAxis dataKey="date" />
           <YAxis allowDecimals={false} />
           <Tooltip />
-          <Bar dataKey="count" fill="white" barSize={75} />
+          <Bar dataKey="count" fill="#d1587c" barSize={75} />
         </BarChart>
       </ResponsiveContainer>
     </section>
