@@ -33,4 +33,4 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Check out the live application here: [Link] (<https://tryhirememaybe.vercel.app/>)
+Check out the live application here: [Link](https://tryhirememaybe.vercel.app/)
