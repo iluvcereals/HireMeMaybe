@@ -38,6 +38,11 @@ function JobsList() {
           return <JobCard key={job.id} job={job} />;
         })}
       </div>
+      <div className="mt-8 flex items-center justify-end">
+        {totalPages < 2 ? null : (
+          <ButtonContainer currentPage={page} totalPages={totalPages} />
+        )}
+      </div>
     </>
   );
 }
