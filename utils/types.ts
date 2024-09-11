@@ -19,9 +19,9 @@ export enum JobStatus {
 }
 
 export enum JobMode {
+  Internship = "internship",
   FullTime = "full-time",
   PartTime = "part-time",
-  Internship = "internship",
 }
 
 export const createAndEditJobSchema = z.object({
