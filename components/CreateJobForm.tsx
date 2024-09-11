@@ -28,7 +28,7 @@ function CreateJobForm() {
       company: "",
       location: "",
       status: JobStatus.Pending,
-      mode: JobMode.FullTime,
+      mode: JobMode.Internship,
     },
   });
 
